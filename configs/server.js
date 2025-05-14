@@ -7,6 +7,7 @@ import morgan from 'morgan';
 import { dbConnection } from './mongo.js';
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import courseRoutes from "../src/course/course.routes.js";
+import postRoutes from "../src/post/post.routes.js";
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -19,6 +20,7 @@ const middlewares = (app) => {
 
 const routes = (app) => {
     app.use("/BlogSystemPu/v1/course", courseRoutes);
+    app.use("/BlogSystemPu/v1/post", postRoutes);
 }
 
 const conectarDB = async () => {
