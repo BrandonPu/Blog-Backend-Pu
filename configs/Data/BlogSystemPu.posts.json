@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6824da5dc3841c549b7e60ae"
+  },
+  "author": "Elmer Santos",
+  "title": "Actividad # 1 - Infografía HTML, CSS, PreProcesadores",
+  "content": "Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa",
+  "course": {
+    "$oid": "6824ce723b7baddd99067948"
+  },
+  "comments": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-14T18:01:01.122Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T18:01:01.122Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824e066e48869e56de841ad"
+  },
+  "author": "Elmer Santos",
+  "title": "Laboratorio # 1 - Agenda Web",
+  "content": "Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa",
+  "course": {
+    "$oid": "6824ceae3b7baddd99067952"
+  },
+  "comments": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-14T18:26:46.904Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T18:26:46.904Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824e086e48869e56de841b0"
+  },
+  "author": "Elmer Santos",
+  "title": "Laboratorio # 1 - página web",
+  "content": "Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa",
+  "course": {
+    "$oid": "6824ce9f3b7baddd9906794e"
+  },
+  "comments": [
+    {
+      "$oid": "6824f58df1ca2090cfd54e94"
+    }
+  ],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-14T18:27:18.693Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T20:18:27.888Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824e34be923bf61391fad56"
+  },
+  "author": "Elmer Santos",
+  "title": "Actividad # 2 - Mapa conceptual",
+  "content": "Se tiene que hacer una Mapa mental la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa",
+  "course": {
+    "$oid": "6824ce723b7baddd99067948"
+  },
+  "comments": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-10T18:39:07.998Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T18:39:07.998Z"
+  }
+}]

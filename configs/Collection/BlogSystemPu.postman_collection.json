@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "0e9657b4-6beb-4ad0-aee5-04acdaf503df",
+		"name": "BlogSystemPu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413624"
+	},
+	"item": [
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "NewCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Practica Supervisada\",\r\n    \"description\": \"Es la parte que lleva de la mano tecnologia y taller y ponerlo en practica como lo que se haria en la vida real\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/course/newCourse",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"course",
+								"newCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/course/getCourses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"course",
+								"getCourses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCourse",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Practica Supervisada\",\r\n    \"description\": \"Es la parte que lleva de la mano tecnologia y taller y ponerlo en practica como lo que se haria en la vida real\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/course/updateCourse/6824ceae3b7baddd99067952",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"course",
+								"updateCourse",
+								"6824ceae3b7baddd99067952"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCourse",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/course/deleteCourse/6824ceae3b7baddd99067952",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"course",
+								"deleteCourse",
+								"6824ceae3b7baddd99067952"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "NewPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Elmer Santos\",\r\n    \"title\": \"Actividad # 2 - Mapa conceptual\",\r\n    \"content\": \"Se tiene que hacer una Mapa mental la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa\",\r\n    \"courseName\": \"Tecnologia\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/post/newPost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"post",
+								"newPost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPost",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Elmer Santos\",\r\n    \"title\": \"Actividad # 1 - Infografía HTML, CSS, PreProcesadores\",\r\n    \"content\": \"Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa\",\r\n    \"courseName\": \"Tecnologia\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/post/getPosts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"post",
+								"getPosts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPostByCourse",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Elmer Santos\",\r\n    \"title\": \"Actividad # 1 - Infografía HTML, CSS, PreProcesadores\",\r\n    \"content\": \"Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa\",\r\n    \"courseName\": \"Tecnologia\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/post/getPosts?courseName=Taller",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"post",
+								"getPosts"
+							],
+							"query": [
+								{
+									"key": "courseName",
+									"value": "Taller"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllPostByCreateAt",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Elmer Santos\",\r\n    \"title\": \"Actividad # 1 - Infografía HTML, CSS, PreProcesadores\",\r\n    \"content\": \"Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa\",\r\n    \"courseName\": \"Tecnologia\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/post/getPosts?sortBy=createdAt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"post",
+								"getPosts"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "createdAt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePost",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"author\": \"Elmer Santos\",\r\n  \"title\": \"Laboratorio # 1 - página web\",\r\n  \"content\": \"Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa\",\r\n  \"courseName\": \"Taller\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/post/updatePost/6824e086e48869e56de841b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"post",
+								"updatePost",
+								"6824e086e48869e56de841b0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeltePost",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Elmer Santos\",\r\n    \"title\": \"Actividad # 1 - Infografía HTML, CSS, PreProcesadores\",\r\n    \"content\": \"Se tiene que hacer una infografia la cual abarque HTML5, CSS3, Flexbox, Boostrap, PreProcesadores CSS entre otros y esta infografia tiene que tener diseño y estructura osea debe de estar orgnizada en secciones claras la cual facilitene la claridad del proyecto e investigar fuentes confiables sobre cada tecnologia para asegurarse de brindar informacion precisa\",\r\n    \"courseName\": \"Tecnologia\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/post/deletePost/6824e086e48869e56de841b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"post",
+								"deletePost",
+								"6824e086e48869e56de841b0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "NewComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Maria\",\r\n  \"content\": \"Con esto ya se que tengo que hacer\",\r\n  \"postId\": \"6824e086e48869e56de841b0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/comment/newComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"comment",
+								"newComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateComment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Juan P.\",\r\n  \"content\": \"Ya lo entendí mejor. Gracias.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/comment/updateComment/6824f526f1ca2090cfd54e8c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"comment",
+								"updateComment",
+								"6824f526f1ca2090cfd54e8c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Juan P.\",\r\n  \"content\": \"Ya lo entendí mejor. Gracias.\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/BlogSystemPu/v1/comment/deleteComment/6824f526f1ca2090cfd54e8c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"BlogSystemPu",
+								"v1",
+								"comment",
+								"deleteComment",
+								"6824f526f1ca2090cfd54e8c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

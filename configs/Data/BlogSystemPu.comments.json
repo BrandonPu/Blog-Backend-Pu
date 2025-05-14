@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6824f58df1ca2090cfd54e94"
+  },
+  "name": "Maria",
+  "content": "Con esto ya se que tengo que hacer",
+  "post": {
+    "$oid": "6824e086e48869e56de841b0"
+  },
+  "createdAt": {
+    "$date": "2025-05-14T19:57:01.355Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T19:57:01.355Z"
+  }
+}]

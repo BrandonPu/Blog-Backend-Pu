@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "6824ce723b7baddd99067948"
+  },
+  "name": "Tecnologia",
+  "description": "Es la parte donde se aprende toda la base la cual se va a poner a prueba y poner en practica en taller",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-14T17:10:10.179Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T17:10:10.179Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824ce9f3b7baddd9906794e"
+  },
+  "name": "Taller",
+  "description": "Es la parte que lleva de la mano tecnologia y ponerlo en practica aplicando todos los conocimientos obtuvidos en tecnologia",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-14T17:10:55.864Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T17:10:55.864Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824ceae3b7baddd99067952"
+  },
+  "name": "Practica Supervisada",
+  "description": "Es la parte que lleva de la mano tecnologia y taller y ponerlo en practica como lo que se haria en la vida real",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-14T17:11:10.201Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T17:21:53.537Z"
+  }
+}]

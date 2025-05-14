@@ -8,6 +8,7 @@ import { dbConnection } from './mongo.js';
 import limiter from '../src/middlewares/validar-cant-peticiones.js';
 import courseRoutes from "../src/course/course.routes.js";
 import postRoutes from "../src/post/post.routes.js";
+import commentRoutes from "../src/comment/comment.routes.js";
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -21,6 +22,7 @@ const middlewares = (app) => {
 const routes = (app) => {
     app.use("/BlogSystemPu/v1/course", courseRoutes);
     app.use("/BlogSystemPu/v1/post", postRoutes);
+    app.use("/BlogSystemPu/v1/comment", commentRoutes);
 }
 
 const conectarDB = async () => {
