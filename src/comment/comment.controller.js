@@ -5,10 +5,13 @@ export const createComment = async (req, res) => {
     try {
         const { name, content, postId } = req.body;
 
-        if (!name || !content || !postId) {
+        // Si no se proporciona 'name', asignar "Anónimo" por defecto
+        const authorName = name || "Anónimo";
+
+        if (!content || !postId) {
             return res.status(400).json({
                 success: false,
-                message: "Los campos 'name', 'content' y 'postId' son obligatorios."
+                message: "Los campos 'content' y 'postId' son obligatorios."
             });
         }
 
@@ -21,7 +24,7 @@ export const createComment = async (req, res) => {
         }
 
         const newComment = new Comment({
-            name,
+            name: authorName,  // Asignamos el nombre, o "Anónimo" si no se proporciona
             content,
             post: postId
         });
@@ -45,6 +48,7 @@ export const createComment = async (req, res) => {
         });
     }
 };
+
 
 export const editComment = async (req, res) => {
     try {

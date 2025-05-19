@@ -4,8 +4,8 @@ const commentSchema = new Schema(
     {
         name: {
             type: String,
-            required: true,
-            trim: true
+            trim: true,
+            default: "Anónimo"  
         },
         content: {
             type: String,
