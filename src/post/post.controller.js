@@ -17,7 +17,7 @@ export const createPost = async (req, res) => {
         if (!course) {
             return res.status(404).json({
                 success: false,
-                message: "Curso no encontrado con ese nombre."
+                message: "Curso no encontrado con ese nombre hay (Tecnologia, Practica Supervisada, Taller)"
             });
         }
 
